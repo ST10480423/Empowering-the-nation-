@@ -1,0 +1,155 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #fff7ed; /* light orange background */
+  color: #333;
+  line-height: 1.6;
+}
+
+
+nav {
+  background: #ff7b00;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd9b3;
+}
+
+
+.card {
+  background: #fff;
+  border: 1px solid #fed7aa; /* orange-200 */
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(249, 115, 22, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+
+.btn-primary {
+  background: #f97316; /* orange-500 */
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #ea580c; /* orange-600 */
+}
+
+.btn-outline {
+  background: #fff;
+  color: #f97316;
+  border: 2px solid #f97316;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #f97316;
+  color: #fff;
+}
+
+
+.input-field {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #fcd34d; /* soft orange border */
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.3);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+}
+
+.badge-primary {
+  background: #f97316;
+  color: #fff;
+}
+
+.badge-outline {
+  background: transparent;
+  border: 1px solid #f97316;
+  color: #f97316;
+}
+
+
+.cart-item button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.quantity-controls button {
+  background: #fed7aa; /* orange-200 */
+  border: none;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.quantity-controls button:hover {
+  background: #f97316;
+  color: #fff;
+}
+
+#successModal .bg-white {
+  border-top: 4px solid #f97316;
+}
+
+.text-orange {
+  color: #f97316;
+}
+
+.bg-orange {
+  background: #f97316;
+}

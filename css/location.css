@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+nav {
+  background: #ff7b00;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd9b3;
+}
+
+/* css/location.css */
+
+/* --- Base --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8f2;
+  color: #3a2a20;
+  padding: 20px;
+}
+
+/* --- Navigation --- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  background: #ff7a1a;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+nav a:hover { background: #e66a15; }
+
+/* --- Page container --- */
+.page { max-width: 1200px; margin: auto; }
+
+/* --- Header --- */
+.location-header {
+  background: #ff9d4d;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.location-header h1 { margin-bottom: 6px; }
+
+/* --- Layout: maps on left, info on right --- */
+.location-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* --- Map container --- */
+.map-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.map-container iframe {
+  width: 100%;
+  height: 220px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Small label under each map */
+.map-overlay { margin-top: 4px; }
+.map-marker {
+  background: #fff4eb;
+  border: 1px solid #ffcfaa;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  color: #4a2d17;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* --- Info cards on right side --- */
+.location-details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.location-details-card,
+.operating-hours-card,
+.transport-card {
+  background: #fff;
+  border: 1px solid #ffd7b5;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.location-details-card h2,
+.operating-hours-card h2,
+.transport-card h2 {
+  margin-bottom: 10px;
+  color: #c24c00;
+}
+
+/* --- Detail groups --- */
+.location-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.detail-group {
+  background: #fff8f2;
+  border: 1px solid #ffd7b5;
+  border-radius: 6px;
+  padding: 10px;
+}
+.detail-group h3 { font-size: 1rem; margin-bottom: 6px; color: #7a3c00; }
+.detail-group p, .detail-group span { font-size: 0.9rem; }
+
+/* --- Hours list --- */
+.hours-list { display: flex; flex-direction: column; gap: 8px; }
+.hours-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: #fff6ef;
+  border: 1px dashed #ffbe94;
+  border-radius: 6px;
+}
+
+/* --- Transport options --- */
+.transport-options { display: flex; flex-direction: column; gap: 8px; }
+.transport-options > div {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: #fff8f2;
+  border: 1px solid #ffd7b5;
+  border-radius: 6px;
+}
+.transport-icon { font-size: 18px; }
+
+/* --- Bottom text fix --- */
+footer, .bottom-text {
+  margin-top: 20px;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6a4c36;
+  background: #fff4eb;
+  border: 1px solid #ffd7b5;
+  border-radius: 8px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .location-main { grid-template-columns: 1fr; }
+}
+
+footer {
+  background: #ff7b00;
+  color: white;
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
