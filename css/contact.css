@@ -406,7 +406,7 @@ h2, h3 {
 }
 
 footer {
-  background: #ff7b00;
+  background: #0f0f0f;
   color: white;
   padding: 2rem;
   margin-top: 2rem;
@@ -420,4 +420,19 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fdfcfc;  /* default color */
+    font-size: 24px; /* icon size */
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff5500; /* hover color */
 }
