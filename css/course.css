@@ -25,10 +25,6 @@ nav {
     justify-content: center;
     gap: 20px;
 }
-.nav-container {
-    display: flex;
-    align-items: center;
-}
 
 .nav-links li a {
     color: white;
